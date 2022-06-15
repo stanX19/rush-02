@@ -13,7 +13,7 @@ static char* get_val(char* str) {
 	if (str[i] == ' ')
 		i++;
 	len = i;
-	while (str[len] && str[len] != '\n')
+	while (str[len] && str[len] != '\n' && str[len] != '\r')
 		len++;
 	return substr(str, i, len);
 }

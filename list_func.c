@@ -25,6 +25,12 @@ node* push_node(node**start, long long int key, char* val) {
 	return new;
 }
 
+node* last_node(node* head) {
+	if (head->next)
+		return last_node(head->next);
+	return head;
+}
+
 void free_list(node* start) {
 	node* temp;
 

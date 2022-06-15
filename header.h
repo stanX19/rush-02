@@ -20,6 +20,7 @@ typedef struct s_dict
 node* new_node(long long int key, char* val);
 node* push_node(node** start, long long int key, char* val);
 void free_list(node* start);
+node* last_node(node* head);
 
 char* get_next_line(int fd);
 char* substr(char* str, int start, int end);
@@ -28,5 +29,7 @@ int	  find(char* str, int start, int end, char target);
 void* ft_memcpy(char* dst, const char* src, int n);
 long long int	ft_atoi(char* str);
 int ft_strlen(char* str);
+char* ft_strcat(char* dest, char* src);
+
 node* read_dict(int fd);
 #endif
