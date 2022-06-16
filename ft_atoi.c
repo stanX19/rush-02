@@ -2,7 +2,7 @@ long long int	ft_atoi(char* str)
 {
 	int				i;
 	long long int	val;
-	int				charge;
+	long long int	charge;
 
 	i = 0;
 	val = 0;

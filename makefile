@@ -10,7 +10,7 @@ TEST_PATH =
 
 run:
 	gcc $(FLAGS) $(SRCS)
-	@./a.out 0
+	@./a.out 12345
 
 test: $(TESTER)
 	cd $(TESTER) && make && make fclean
